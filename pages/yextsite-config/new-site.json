@@ -16,7 +16,16 @@
   "branches": [
     {
       "name": "main",
-      "envVars": [],
+      "envVars": [
+        {
+          "key": "YEXT_PUBLIC_YEXT_API_KEY",
+          "value": "${{apiKey}}"
+        },
+        {
+          "key": "YEXT_PUBLIC_ENTITY_ID",
+          "value": "${{entityId}}"
+        }
+      ],
       "isProductionBranch": true
     }
   ]
